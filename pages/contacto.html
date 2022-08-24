@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+   
    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body class="grid-container">
+<body>
   
     <header class="header">
       <div>
@@ -19,48 +22,88 @@
       <h1>Dulce Pasteleria</h1>
     </header>
     
-    <nav class="nav">
-      <ul>
-        <li class="menu"><a href="../index.html">Inicio</a></li>
-                  <li class="menu"><a href="./Galeria.html">Galeria</a></li>
-                  <li class="menu"><a href="./QuienesSomos.html">Quienes Somos</a></li>
-                  <li class="menu"><a href="./Productos.html">Productos</a></li>
-                  <li class="menu"><a href="./Contacto.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a href=""><img class="logo" src="./img/logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"></a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <form action="#">
-        <h2>Contacto</h2>
-        <label for="Nombre">Nombre:</label>
-        <input type="text"> 
-        <br>
-        <label for="Apellido">Apellido:</label>
-        <input type="text">
-        <br>
-        <label for="Email">Email:</label>
-        <input type="text" required>
-        <br>
-        <label for="Distrito">Distrito:</label>
-        <select name="Distrito">
-            <option value="Opcion1">Tigre</option>
-            <option value="Opcion2">Victoria</option>
-            <option value="Opcion3">San fernando</option>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Calle 1234">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="Ciudad">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Provincia</label>
+        <select id="inputState" class="form-select">
+          <option selected>..</option>
+          <option>Buenos Aires</option>
+          <option>Corrientes</option>
+          <option>Misiones</option>
         </select>
-        <br>
-      <label for="Hombre">Hombre:</label>
-      <input type="radio" name="" id=""> 
-      <label for="Mujer">Mujer</label> 
-      <input type="radio" name="" id="">
-      <br>
-      <textarea name="texto" id="" cols="30" rows="10"></textarea>
-      <br>
-      <button type="submit">Enviar</button>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">CP</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            No soy un robot
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
     </form>
+    
+    
     <footer class="footer">
-        <ul>
-        <li class="logoPie"><a href="http://facebook.com"><img src="../img/facebook.png" alt=""></a></li>
-        <li class="logoPie"><a href="http://Instagram.com"><img src="../img/instagram.png" alt=""></a></li>
-        <li class="logoPie"><a href="http://twitter.com"><img src="../img/twitter.png" alt=""></a></li>
-        </ul>
-    </footer>
+      <ul>
+        <li class="logoPie"><a href="http://facebook.com"><img src="./img/facebook.png" alt=""></a></li>
+        <li class="logoPie"><a href="http://Instagram.com"><img src="./img/instagram.png" alt=""></a></li>
+        <li class="logoPie"><a href="http://twitter.com"><img src="./img/twitter.png" alt=""></a></li>
+      </ul>
+  </footer>
+    
+    
+      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>

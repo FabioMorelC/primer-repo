@@ -11,7 +11,7 @@ html{
   height: 100%;
 }
 
-body{
+/** body{
   min-height: 100%;
   background-color: #ffe5f0;
 }
@@ -121,7 +121,7 @@ h1{
   transition: 1s
 }
 .logoPie a img:hover{
-  width: 34px;
+  width: 33px;
   height: 33px;
 }
 
@@ -145,4 +145,52 @@ h1{
   .img-rogel img {
     width: 70%;
 }
+} */
+
+.logo{
+  width: 30px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  padding: 1rem;
+  
+ 
+}
+h1{
+  color: #6b359c;
+  font-size: xxx-large;
+  font-family: 'Dancing Script', cursive;
+}
+.imglogo{
+  width: 60px;
+}
+
+.p-2 img{
+  width: 100%
+}
+.footer,ul,li,a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer ul{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logoPie{
+  padding: 10px;
+}
+
+.logoPie a img{
+  width: 30px;
+  transition: 1s
+}
+.logoPie a img:hover{
+  width: 33px;
+  height: 33px;
 }
