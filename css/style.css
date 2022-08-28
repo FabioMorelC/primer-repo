@@ -147,17 +147,27 @@ h1{
 }
 } */
 
+.body-container{
+  background-color:#ffe5f0 ;
+}
 .logo{
   width: 30px;
 }
 .header{
   display: flex;
   align-items: center;
-  grid-area: header;
   padding: 1rem;
   
- 
 }
+.navbar{
+  background-color:#ffdfec ;
+  font-family: 'Dancing Script', cursive;
+  font-size: larger;
+  color: #6b359c;
+  padding: 3px;
+}
+
+
 h1{
   color: #6b359c;
   font-size: xxx-large;
